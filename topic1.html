@@ -26,7 +26,7 @@
             var numbers = document.getElementById('userInput').value; 
             var numlist = numbers.split('\n');
             var total = countEvens(numlist);
-            var multiple = parseInt(document.getElementById('intBox').value);
+            var multiple = parseFloat(document.getElementById('intBox').value);
             var products = multiply(numlist, multiple); 
             document.getElementById('multiplyDiv').innerHTML = products;
         }
