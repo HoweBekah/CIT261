@@ -1,0 +1,35 @@
+
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    text-align: left;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: lightpink;
+    color:  rgb(97, 42, 3);
+}
+button {
+    background-color:rgb(97, 42, 3);
+    color: lightpink; 
+}
+#outputDiv, #multiplyDiv {
+    background-color:rgb(97, 42, 3);
+    color: lightpink; 
+}
+h1 {
+    padding: 1rem;
+    padding-left: 0rem;
+    font-size: 4em;
+    color: rgb(98, 114, 255);
+}
+
+h2 {
+
+    font-size: 2em;
+    
+    padding: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid  rgb(98, 114, 255);
+}
+

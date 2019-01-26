@@ -3,18 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--<link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="css/topic1.css">
     <title>Multiple Evens</title>
     <script>
 
-        function runArray(){
+        function runArray1(){
             var numbers = document.getElementById('userInput').value; 
             var numlist = numbers.split('\n');
             var total = countEvens(numlist);
-            var multiple = parseInt(document.getElementById('intBox').value);
-            var products = multiply(numlist, multiple);
             document.getElementById('outputDiv').innerHTML = "You have " + total + " even numbers present."; 
-            document.getElementById('multiplyDiv').innerHTML = products;
         }
         function countEvens(list){
             var evens = 0;
@@ -25,10 +22,18 @@
         }
         return evens;
         }
+        function runArray2(){
+            var numbers = document.getElementById('userInput').value; 
+            var numlist = numbers.split('\n');
+            var total = countEvens(numlist);
+            var multiple = parseInt(document.getElementById('intBox').value);
+            var products = multiply(numlist, multiple); 
+            document.getElementById('multiplyDiv').innerHTML = products;
+        }
         function multiply(list, multiplier){
             var products = '';            
             for (var i=0; i<list.length;i++){
-                products += (list[i] * multiplier) + (i === data.length - 1 ? "" : ",");
+                products += (list[i] * multiplier) + (i === list.length - 1 ? "" : ", ")+'</b>';
             }
             return products;
         }        
@@ -38,9 +43,10 @@
     <h2>How Many Evens Are There?</h2>
     <textarea id="userInput" rows="16" cols="20"></textarea> <br><br>
     <div id="outputDiv"></div><br>
+    <button type="button" onclick="runArray1()">Submit</button><br>
     <h2>Multiply The Numbers</h2>
 Enter Multiplier: <input type="text" id="intBox"><br><br>
-    <button type="button" onclick="runArray()">Submit</button><br><br>
+    <button type="button" onclick="runArray2()">Multiply</button><br><br>
     <div id="multiplyDiv"></div>
 </body>
 </html>
