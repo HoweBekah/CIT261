@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Multiple Evens</title>
+    <script>
+
+        function runArray(){
+            var numbers = document.getElementById('userInput').value; 
+            var numlist = numbers.split('\n');
+            var total = countEvens(numlist);
+            var multiple = parseInt(document.getElementById('intBox').value);
+            var products = multiply(numlist, multiple);
+            document.getElementById('outputDiv').innerHTML = "You have " + total + " even numbers present."; 
+            document.getElementById('multiplyDiv').innerHTML = products;
+        }
+        function countEvens(list){
+            var evens = 0;
+            for (var i=0; i<list.length;i++){
+                if (list[i] % 2 === 0){
+                ++evens;
+            } 
+        }
+        return evens;
+        }
+        function multiply(list, multiplier){
+            var products = '';
+            for (var i=0; i<list.length;i++){
+                products += (list[i] * multiplier) + ', ';
+            }
+            return products;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');            
+    </script>
+</head>
+<body>
+    <h2>How Many Evens Are There?</h2>
+    <textarea id="userInput" rows="16" cols="20"></textarea> <br><br>
+    <div id="outputDiv"></div><br>
+    <h2>Multiply The Numbers</h2>
+Enter Multiplier: <input type="text" id="intBox"><br><br>
+    <button type="button" onclick="runArray()">Submit</button><br><br>
+    <div id="multiplyDiv"></div>
+</body>
+</html>
