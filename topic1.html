@@ -27,8 +27,10 @@
         }
         function multiply(list, multiplier){
             var products = '';
+            var comma = "";
             for (var i=0; i<list.length;i++){
-                products += (list[i] * multiplier) + ', ';
+                products += (list[i] * multiplier);
+                comma = ", ";
             }
             return products;
         }        
