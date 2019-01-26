@@ -38,39 +38,41 @@
             return products;
         }    
         function checkArith() {
-var a = parseInt(document.getElementById('numb1Box').value);
-var o = document.getElementById('oppBox').value;
-var b = parseInt(document.getElementById('numb2Box').value);
-var ans = parseFloat(document.getElementById('answerBox').value);
-var result;
-switch(o){
-case '+':
-if (a + b === ans){
-result= "Correct. Good job!";
-} else {
-result= "Incorrect. Try again!";
-} break; 
-case '-':
-if (a - b === ans){
-result= "Correct. Good job!";
-} else {
-result= "Incorrect. Try again!";
-} break; 
-case '*':
-if (a * b === ans){
-result= "Correct. Good job!";
-} else {
-result= "Incorrect. Try again!";
-} break; 
-case '/':
-if (a / b === ans){
-result= "Correct. Good job!";
-} else {
-result= "Incorrect. Try again!";
-} break;
-}
+            var a = parseInt(document.getElementById('numb1Box').value);
+            var o = document.getElementById('oppBox').value;
+            var b = parseInt(document.getElementById('numb2Box').value);
+            var ans = parseFloat(document.getElementById('answerBox').value);
+            var result;
+            switch(o){
+                case '+':
+                    if (a + b === ans){
+                    result= "Correct. Good job!";
+                    } else {
+                     result= "Incorrect. Try again!";
+                    } break; 
+            case '-':
+                    if (a - b === ans){
+                    result= "Correct. Good job!";
+                    } else {
+                    result= "Incorrect. Try again!";
+                    } break; 
+            case '*':
+                    if (a * b === ans){
+                    result= "Correct. Good job!";
+                    } else {
+                    result= "Incorrect. Try again!";
+                    } break; 
+            case '/':
+                    if (a / b === ans){
+                    result= "Correct. Good job!";
+                    } else {
+                    result= "Incorrect. Try again!";
+                    } break;
+            default:
+                    "Please check your entries and try again!"
+            }
 
-document.getElementById('checkDiv').innerHTML = result;
+            document.getElementById('checkDiv').innerHTML = result;
 }
     
     </script>
@@ -91,7 +93,7 @@ Enter Multiplier: <input type="text" id="intBox"><br>
     <input type="text" id="numb1Box" placeholder="ex. 23">
     <input type="text" id="oppBox" placeholder="+, -, *, or /">
     <input type="text" id="numb2Box" placeholder="ex. 12"> 
-    <input type="text" id="answerBox" placeholder="ex. 3"><br><br>
+    = <input type="text" id="answerBox" placeholder="ex. 3"><br>
     <button type="button" onclick="checkArith()">Check</button> <br>
     <div id="checkDiv" class="displays"></div> 
 </body>
