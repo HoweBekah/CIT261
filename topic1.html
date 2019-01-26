@@ -26,11 +26,9 @@
         return evens;
         }
         function multiply(list, multiplier){
-            var products = '';
-            var comma = "";
+            var products = '';            
             for (var i=0; i<list.length;i++){
-                products += (list[i] * multiplier);
-                comma = ", ";
+                products += (list[i] * multiplier) + (i === data.length - 1 ? "" : ",");
             }
             return products;
         }        
