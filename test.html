@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <Script>
+        var movielist = [];
+
+function Movie( title, rating, format){
+  this.title = title;
+  this.rating = rating;
+  this.format = format;
+  this.doReport = function () {
+    return this.title + ', ' + this.rating + ", " + this.format;
+  }
+}
+
+function doReport() {
+   output = "";
+   for(var i = 0; i < movielist.length; i++) {
+      output += (i + 1) + ") " + movielist[i].doReport() + "<br>";
+   }
+   document.getElementById("output").innerHTML = output;
+}
+
+function listing() {
+  var newMovie =  new Movie(
+    document.getElementById("title").value, 
+    document.getElementById("rating").value, 
+    document.getElementById("format").value
+  );
+  movielist.push(newMovie);
+  doReport();
+}
+    </Script>
+</head>
+<body>
+        Movie Title: <input type ="text" id = "title"><br/><br/>
+        Rating: <input type ="text" id = "rating"><br/><br/>
+        Format: <input type ="text" id = "format" placeholder="digital copy, DVD, Bluray"><br/><br/>
+        <button type="button" onclick="listing()">Submit</button><br>
+        <p id="output"></p>
+</body>
+</html>
