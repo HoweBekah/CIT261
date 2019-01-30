@@ -9,7 +9,7 @@ body {
 button {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1.25rem;
-    
+    box-shadow: 3px 3px 3px brown;
     background-color:rgb(98, 114, 255);
     color: whitesmoke; 
 }
