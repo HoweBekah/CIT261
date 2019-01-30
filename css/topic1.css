@@ -19,13 +19,13 @@ button {
     color: whitesmoke; 
 }
 .displays {
-    background-color:rgb(97, 42, 3);
+    padding-top: 1rem;
     color: lightpink; 
     width: 25%;
-    border: 2px dashed rgb(98, 114, 255);
+    border: .5rem dashed rgb(97, 42, 3);;
 }
 h2 {
-padding: 1rem;
+    padding: 1rem;
     font-size: 2em;
 }
 
