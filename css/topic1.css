@@ -2,6 +2,7 @@
 * { margin: 0; box-sizing: border-box; } 
 
 body { 
+    padding-left:.25rem;
     font-size: 1.25rem; 
     line-height: 32px;
     text-align: left;
