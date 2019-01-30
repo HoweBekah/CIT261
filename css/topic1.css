@@ -22,6 +22,7 @@ button {
     background-color:rgb(97, 42, 3);
     color: lightpink; 
     width: 25%;
+    border: 2px dashed rgb(98, 114, 255);
 }
 h2 {
 padding: 1rem;
