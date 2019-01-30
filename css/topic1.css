@@ -27,6 +27,7 @@ button {
 }
 h2 {
     padding: 1rem;
+    padding-bottom: .5rem;
     font-size: 2em;
     border-bottom: 4px solid rgb(98, 114, 255);
 }
