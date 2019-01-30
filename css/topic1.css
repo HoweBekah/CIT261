@@ -31,4 +31,8 @@ h2 {
 padding: 1rem;
     font-size: 2em;
 }
+#content{
+    width:75%;
+    margin: 0 auto;  
+    }
 
