@@ -15,6 +15,7 @@ body {
 button {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1rem;
+    font-style: bold;
     background-color:rgb(98, 114, 255);
     color: whitesmoke; 
 }
