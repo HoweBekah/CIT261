@@ -17,6 +17,7 @@ button {
     font-size: 1.25rem;
     background-color:rgb(98, 114, 255);
     color: whitesmoke; 
+    box-shadow: 5px 5px 5px brown;
 }
 .displays {
     margin-top: 1rem;
