@@ -31,5 +31,7 @@ h2 {
     font-size: 2em;
     border-bottom: 4px solid rgb(98, 114, 255);
 }
-
+textarea{
+    padding-top: .5rem;
+}
 
