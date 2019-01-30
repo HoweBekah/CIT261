@@ -20,9 +20,9 @@ button {
 }
 .displays {
     padding-top: 1rem;
-    color: lightpink; 
+    color: rgb(97, 42, 3); 
     width: 25%;
-    border: .5rem dashed rgb(97, 42, 3);;
+    border: .5rem dashed rgb(98, 114, 255);
 }
 h2 {
     padding: 1rem;
