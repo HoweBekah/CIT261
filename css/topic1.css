@@ -1,6 +1,9 @@
 
 * { margin: 0; box-sizing: border-box; } 
-
+#content{
+    width:75%;
+    margin: 0 auto;  
+    }
 body { 
     padding-left:.5rem;
     font-size: 1.25rem; 
@@ -31,8 +34,5 @@ h2 {
 padding: 1rem;
     font-size: 2em;
 }
-#content{
-    width:75%;
-    margin: 0 auto;  
-    }
+
 
