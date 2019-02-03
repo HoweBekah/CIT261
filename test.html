@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/topic2.css">
+    <link rel="stylesheet" href="copy.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
     </style>
@@ -28,34 +28,38 @@
         var header = document.querySelector('header');
         var section = document.querySelector('section');
 
-        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+        var requestURL = 'https://howebekah.github.io/CIT261/villian.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'text';
         request.send();
 
         request.onload = function () {
-            var superHeroesText = request.response;
-            var superHeroes = JSON.parse(superHeroesText);
-            populateHeader(superHeroes);
-            showHeroes(superHeroes);
+            var villiansText = request.response;
+            var villian = JSON.parse(villiansText);
+            populateHeader(villian);
+            showHeroes(villian);
         }
 
         function populateHeader(jsonObj) {
             var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['squadName'];
+            myH1.textContent = jsonObj['teamName'];
             header.appendChild(myH1);
 
             var myPara = document.createElement('p');
-            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'];
             header.appendChild(myPara);
+
+            var myBase = document.createElement('p');
+            myBase.textContent = 'Secret Sanctum: ' + jsonObj['secretBase'];
+            header.appendChild(myBase);
 
         }
 
         function showHeroes(jsonObj) {
-            var heroes = jsonObj['members'];
+            var villians = jsonObj['members'];
 
-            for (var i = 0; i < heroes.length; i++) {
+            for (var i = 0; i < villians.length; i++) {
                 var myArticle = document.createElement('article');
                 var myH2 = document.createElement('h2');
                 var myPara1 = document.createElement('p');
@@ -63,15 +67,15 @@
                 var myPara3 = document.createElement('p');
                 var myList = document.createElement('ul');
 
-                myH2.textContent = heroes[i].name;
-                myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-                myPara2.textContent = 'Age: ' + heroes[i].age;
-                myPara3.textContent = 'Superpowers:';
+                myH2.textContent = villians[i].name;
+                myPara1.textContent = 'Secret Identity: ' + villians[i].secretIdentity;
+                myPara2.textContent = 'Age: ' + villians[i].age;
+                myPara3.textContent = 'Evil Powers: ';
 
-                var superPowers = heroes[i].powers;
-                for (var j = 0; j < superPowers.length; j++) {
+                var powers = villians[i].powers;
+                for (var j = 0; j < powers.length; j++) {
                     var listItem = document.createElement('li');
-                    listItem.textContent = superPowers[j];
+                    listItem.textContent = powers[j];
                     myList.appendChild(listItem);
                 }
 
