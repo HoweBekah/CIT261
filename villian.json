@@ -1,0 +1,50 @@
+{
+    "teamName": "DisneyEvil Inc.",
+    "homeTown": "New York",
+    "secretBase": "Basement of Yankee Stadium",
+    "active": true,
+    "members": [
+        {
+            "name": "Maleficent",
+            "age": 35,
+            "secretIdentity": "Jane Smith",
+            "powers": [
+                "Cunning",
+                "Magic",
+                "Womanly Wiles"
+            ]
+        },
+        {
+            "name": "Mother Gothal",
+            "age": 129,
+            "secretIdentity": "Gerty Wilson",
+            "powers": [
+                "Super Strength",
+                "Persuasive",
+                "Agile"
+            ]
+        },
+        {
+            "name": "Thanos",
+            "age": "Unknown",
+            "secretIdentity": "Unnecessary",
+            "powers": [
+                "Immortality",
+                "Snapping",
+                "Strength",
+                "Big Guy"
+            ]
+        },
+        {
+            "name": "Cruela Devil",
+            "age": "45",
+            "secretIdentity": "N/A",
+            "powers": [
+                "Creativity",
+                "Money",
+                "Power",
+                "Style"
+            ]
+        }
+    ]
+}

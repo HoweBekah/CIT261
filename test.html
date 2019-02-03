@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/topic2.css">
-    <title>JavaScript Objects</title>
-    <Script>
-        var movielist = [];
-        var titles = [];
-        var ratings = [];
-        var formats = [];
-        var movies = [];
-        function Movie( title, rating, format){
-            this.title = title;
-            this.rating = rating;
-            this.format = format;
-            this.doReport = function () {
-                return this.title + ', ' + this.rating + ", " + this.format;
-                }
-        }
-        
-        function doReport() {
-            output = "";
-            for(var i = 0; i < movielist.length; i++) {
-                output += movielist[i].doReport() + "<br>";
-            }
-            titles.push(title.value);
-            ratings.push(rating);
-            formats.push(format);
-            var body, tab, tr, td, tn, row, col;
-            movies = [titles, ratings, formats];
-            body = document.getElementsByTagName('body')[0];
-            tab = document.createElement('table');
-            for (row = 0; row < movies.length; row++){
-                tr = document.createElement('tr');
-            for (col = 0; col < movies[row].length; col++){
-                 td = document.createElement('td');
-                tn = document.createTextNode(movies[row][col]);
-                td.appendChild(tn);
-                tr.appendChild(td);
-            }
-            tab.appendChild(tr);
-            }
-            body.appendChild(tab);
-            var sorted = titles.sort().join(', ');
-            document.getElementById("output").innerHTML = output;
-            document.getElementById("outputSort").innerHTML = "Titles A-Z: " + sorted;
-            
-        }
-      
-        function listing() {
-            var newMovie =  new Movie(
-                document.getElementById("title").value, 
-                document.getElementById("rating").value, 
-                document.getElementById("format").value
-            );
-            movielist.push(newMovie);
-            doReport();
-          
-        }
-        
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+    </style>
+    <title>JavaScript Objects Evidence</title>
 
-        function total(){
-            var total = titles.length;
-            document.getElementById("outputTotal").innerHTML = "You own " + total + " movies!";
+</head>
+
+<body>
+
+
+    <header>
+
+    </header>
+
+    <section>
+
+    </section>
+
+    <script>
+        var header = document.querySelector('header');
+        var section = document.querySelector('section');
+
+        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'text';
+        request.send();
+
+        request.onload = function () {
+            var superHeroesText = request.response;
+            var superHeroes = JSON.parse(superHeroesText);
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
         }
-        </Script>
-    </head>
-    <body>
-        <div id="content">
-            <h2 id="databasetitle">Simple Movie Collection List</h2>
-            <form onsubmit="this.submit(); this.reset(); return false;">
-            Movie Title: <input type ="text" id = "title"><br>
-            Rating: <input type ="text" id = "rating"><br>
-            Format: <input type ="text" id = "format" placeholder="digital copy, DVD, Bluray"><br>
-            </form>
-            <button type="button" onclick="listing()">Submit</button><br>
-            <div id="outputSort" class ="displays"></div>
-            <button id="totalbutton" type="button" onclick="total()">Total Amount of Movies</button>
-            <div id="output"></div><br><br>
-            <div id="outputTotal"></div>
-        </div>
-    </body>
-    </html>
+
+        function populateHeader(jsonObj) {
+            var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['squadName'];
+            header.appendChild(myH1);
+
+            var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+
+        }
+
+        function showHeroes(jsonObj) {
+            var heroes = jsonObj['members'];
+
+            for (var i = 0; i < heroes.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myList = document.createElement('ul');
+
+                myH2.textContent = heroes[i].name;
+                myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+                myPara2.textContent = 'Age: ' + heroes[i].age;
+                myPara3.textContent = 'Superpowers:';
+
+                var superPowers = heroes[i].powers;
+                for (var j = 0; j < superPowers.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = superPowers[j];
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

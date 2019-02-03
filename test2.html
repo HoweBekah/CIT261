@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/topic2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+        </style>
+    <title>JavaScript Objects Evidence</title>
+    <Script>
+        var movielist = [];
+
+        function Movie(title, rating, format) {
+            this.title = title;
+            this.rating = rating;
+            this.format = format;
+            this.doReport = function () {
+                return this.title + ', ' + this.rating + ", " + this.format;
+            }
+        }
+
+        function doReport() {
+            output = "";
+            for (var i = 0; i < movielist.length; i++) {
+                JSON.stringify(movielist);
+                output += movielist[i].doReport() + "<br>";
+
+            }
+
+            document.getElementById("output").innerHTML = output;
+
+        }
+
+        function listing() {
+            var newMovie = new Movie(
+                document.getElementById("title").value,
+                document.getElementById("rating").value,
+                document.getElementById("format").value
+            );
+
+            movielist.push(newMovie);
+            doReport();
+        }
+
+    </Script>
+</head>
+
+<body>
+    <div id="content">
+        <h2 id="databasetitle">Simple Movie Collection List</h2>
+        <form>
+            Movie Title: <input type="text" id="title"><br>
+            Rating: <input type="text" id="rating"><br>
+            Format: <input type="text" id="format" placeholder="digital copy, DVD, Bluray"><br>
+        </form>
+        <button type="button" onclick="listing()">Submit</button><br>
+
+
+        <div id="output"></div><br><br>
+
+    </div>
+</body>
+
+</html>
