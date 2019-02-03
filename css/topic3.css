@@ -1,37 +1,55 @@
+/* || general styles */
 
-* { margin: 0; box-sizing: border-box; } 
-#content{
-    width:75%;
-    margin: 0 auto;  
-    }
-body { 
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+  width: 75%;
+  margin: 0 auto;
+  
     font-size: 1.25rem; 
-    line-height: 32px;
-    text-align: left;
+    line-height: 1.5rem;
+    text-align: center;
     font-family: 'Shadows Into Light', cursive;
     background-color: lightpink;
     color:  rgb(97, 42, 3);
-}
-button {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1.25rem;
-    background-color:rgb(98, 114, 255);
-    color: whitesmoke; 
-    box-shadow: 3px 3px 3px brown;
-}
-.displays {
-    margin-top: 1rem;
-    color: rgb(97, 42, 3); 
-    width: 25%;
-    border: .25rem dashed rgb(98, 114, 255);
-}
-h2 {
-    padding: 1rem;
-    padding-bottom: .5rem;
-    font-size: 2em;
-    border-bottom: 4px solid rgb(98, 114, 255);
-}
-textarea{
-    margin-top: .5rem;
+
 }
 
+h1 {
+    padding: 1rem;
+    padding-left: 0rem;
+    font-size: 4em;
+    color: rgb(98, 114, 255);
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+section article {
+  width: 33%;
+  float: left;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
+ text-align: left;
+}
+
+h2 {
+  font-size: 2.5rem;
+  
+  margin-bottom: 10px;
+}
+
+ 
