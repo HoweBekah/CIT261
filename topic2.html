@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +9,63 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
         </style>
-    <title>JavaScript Objects</title>
+    <title>JavaScript Objects Evidence</title>
     <Script>
         var movielist = [];
         var titles = [];
-        function Movie( title, rating, format){
+        function Movie(title, rating, format) {
             this.title = title;
             this.rating = rating;
             this.format = format;
             this.doReport = function () {
                 return this.title + ', ' + this.rating + ", " + this.format;
-                }
+            }
         }
-        
+
         function doReport() {
             output = "";
-            for(var i = 0; i < movielist.length; i++) {
+            for (var i = 0; i < movielist.length; i++) {
                 output += movielist[i].doReport() + "<br>";
             }
             titles.push(title.value);
-            
+
             var sorted = titles.sort().join(', ');
             document.getElementById("output").innerHTML = output;
             document.getElementById("outputSort").innerHTML = "Titles A-Z: " + sorted;
-            
+
         }
-        
+
         function listing() {
-            var newMovie =  new Movie(
-                document.getElementById("title").value, 
-                document.getElementById("rating").value, 
+            var newMovie = new Movie(
+                document.getElementById("title").value,
+                document.getElementById("rating").value,
                 document.getElementById("format").value
             );
             movielist.push(newMovie);
             doReport();
         }
-        function total(){
+        function total() {
             var total = titles.length;
             document.getElementById("outputTotal").innerHTML = "You own " + total + " movies!";
         }
-        </Script>
-    </head>
-    <body>
-        <div id="content">
-            <h2 id="databasetitle">Simple Movie Collection List</h2>
-            <form>
-            Movie Title: <input type ="text" id = "title"><br>
-            Rating: <input type ="text" id = "rating"><br>
-            Format: <input type ="text" id = "format" placeholder="digital copy, DVD, Bluray"><br>
-            </form>
-            <button type="button" onclick="listing()">Submit</button><br>
-            
-            <div id="outputSort" class ="displays"></div>
-            <button id="totalbutton" type="button" onclick="total()">Total Amount of Movies</button>
-            <div id="output"></div><br><br>
-            <div id="outputTotal"></div>
-        </div>
-    </body>
-    </html>
+    </Script>
+</head>
+
+<body>
+    <div id="content">
+        <h2 id="databasetitle">Simple Movie Collection List</h2>
+        <form>
+            Movie Title: <input type="text" id="title"><br>
+            Rating: <input type="text" id="rating"><br>
+            Format: <input type="text" id="format" placeholder="digital copy, DVD, Bluray"><br>
+        </form>
+        <button type="button" onclick="listing()">Submit</button><br>
+
+        <div id="outputSort" class="displays"></div>
+        <button id="totalbutton" type="button" onclick="total()">Total Amount of Movies</button>
+        <div id="output"></div><br><br>
+        <div id="outputTotal"></div>
+    </div>
+</body>
+
+</html>

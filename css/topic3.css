@@ -1,0 +1,37 @@
+
+* { margin: 0; box-sizing: border-box; } 
+#content{
+    width:75%;
+    margin: 0 auto;  
+    }
+body { 
+    font-size: 1.25rem; 
+    line-height: 32px;
+    text-align: left;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: lightpink;
+    color:  rgb(97, 42, 3);
+}
+button {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.25rem;
+    background-color:rgb(98, 114, 255);
+    color: whitesmoke; 
+    box-shadow: 3px 3px 3px brown;
+}
+.displays {
+    margin-top: 1rem;
+    color: rgb(97, 42, 3); 
+    width: 25%;
+    border: .25rem dashed rgb(98, 114, 255);
+}
+h2 {
+    padding: 1rem;
+    padding-bottom: .5rem;
+    font-size: 2em;
+    border-bottom: 4px solid rgb(98, 114, 255);
+}
+textarea{
+    margin-top: .5rem;
+}
+
