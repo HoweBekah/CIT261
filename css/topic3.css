@@ -28,18 +28,20 @@ header p {
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
+  
 }
 
 
 
 section article {
+
   width: 33%;
   float: left;
-  justify-items: center;
 }
 
 section p {
   margin: 5px 0;
+ 
 }
 
 section ul {
