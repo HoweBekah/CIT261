@@ -35,6 +35,7 @@ header p {
 section article {
   width: 33%;
   float: left;
+  justify-items: center;
 }
 
 section p {
@@ -48,7 +49,7 @@ section ul {
 
 h2 {
   font-size: 2.5rem;
-  
+  color: rgb(98, 114, 255);
   margin-bottom: 10px;
 }
 
