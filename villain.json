@@ -53,16 +53,6 @@
                 "Pain & Panic",
                 "Sly"
             ]
-        },
-        {
-            "name": "Scar",
-            "age": "37",
-            "secretIdentity": "A Monkey's Uncle",
-            "powers": [
-                "Conniving",
-                "Smart",
-                "Clever"
-            ]
         }
     ]
 }
