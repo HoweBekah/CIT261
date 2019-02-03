@@ -25,17 +25,17 @@
         var header = document.querySelector('header');
         var section = document.querySelector('section');
 
-        var requestURL = 'https://howebekah.github.io/CIT261/villian.json';
+        var requestURL = 'https://howebekah.github.io/CIT261/villain.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'text';
         request.send();
 
         request.onload = function () {
-            var villiansText = request.response;
-            var villian = JSON.parse(villiansText);
-            populateHeader(villian);
-            showHeroes(villian);
+            var villainsText = request.response;
+            var villain = JSON.parse(villainsText);
+            populateHeader(villain);
+            showHeroes(villain);
         }
 
         function populateHeader(jsonObj) {
@@ -54,9 +54,9 @@
         }
 
         function showHeroes(jsonObj) {
-            var villians = jsonObj['members'];
+            var villains = jsonObj['members'];
 
-            for (var i = 0; i < villians.length; i++) {
+            for (var i = 0; i < villains.length; i++) {
                 var myArticle = document.createElement('article');
                 var myH2 = document.createElement('h2');
                 var myPara1 = document.createElement('p');
@@ -64,12 +64,12 @@
                 var myPara3 = document.createElement('p');
                 var myList = document.createElement('ul');
 
-                myH2.textContent = villians[i].name;
-                myPara1.textContent = 'Secret Identity: ' + villians[i].secretIdentity;
-                myPara2.textContent = 'Age: ' + villians[i].age;
+                myH2.textContent = villains[i].name;
+                myPara1.textContent = 'Secret Identity: ' + villains[i].secretIdentity;
+                myPara2.textContent = 'Age: ' + villains[i].age;
                 myPara3.textContent = 'Evil Powers: ';
 
-                var powers = villians[i].powers;
+                var powers = villains[i].powers;
                 for (var j = 0; j < powers.length; j++) {
                     var listItem = document.createElement('li');
                     listItem.textContent = powers[j];

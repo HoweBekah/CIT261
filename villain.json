@@ -43,6 +43,26 @@
                 "Money",
                 "Power"
             ]
+        },
+        {
+            "name": "Hades",
+            "age": "Immortal",
+            "secretIdentity": "God of the Underworld",
+            "powers": [
+                "Trickster",
+                "Pain & Panic",
+                "Sly"
+            ]
+        },
+        {
+            "name": "Scar",
+            "age": "37",
+            "secretIdentity": "A Monkey's Uncle",
+            "powers": [
+                "Conniving",
+                "Smart",
+                "Clever"
+            ]
         }
     ]
 }
