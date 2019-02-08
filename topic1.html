@@ -1,106 +1,110 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/topic1.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-        </style>
+    </style>
     <title>JavaScript Basics Fluency</title>
     <script>
 
-        function runArray1(){
-            var numbers = document.getElementById('userInput').value; 
+        function runArray1() {
+            var numbers = document.getElementById('userInput').value;
             var numlist = numbers.split('\n');
             var total = countEvens(numlist);
-            document.getElementById('outputDiv').innerHTML = "You have " + total + " even numbers present."; 
+            document.getElementById('outputDiv').innerHTML = "You have " + total + " even numbers present.";
         }
-        function countEvens(list){
+        function countEvens(list) {
             var evens = 0;
-            for (var i=0; i<list.length;i++){
-                if (list[i] % 2 === 0){
-                ++evens;
-            } 
+            for (var i = 0; i < list.length; i++) {
+                if (list[i] % 2 === 0) {
+                    ++evens;
+                }
+            }
+            return evens;
         }
-        return evens;
-        }
-        function runArray2(){
-            var numbers = document.getElementById('userInput').value; 
+        function runArray2() {
+            var numbers = document.getElementById('userInput').value;
             var numlist = numbers.split('\n');
             var total = countEvens(numlist);
             var multiple = parseFloat(document.getElementById('intBox').value);
-            var products = multiply(numlist, multiple); 
+            var products = multiply(numlist, multiple);
             document.getElementById('multiplyDiv').innerHTML = products;
         }
-        function multiply(list, multiplier){
-            var products = '';            
-            for (var i=0; i<list.length;i++){
-                products += (list[i] * multiplier) + (i === list.length - 1 ? "" : ", ")+'</b>';
+        function multiply(list, multiplier) {
+            var products = '';
+            for (var i = 0; i < list.length; i++) {
+                products += (list[i] * multiplier) + (i === list.length - 1 ? "" : ", ") + '</b>';
             }
             return products;
-        }    
+        }
         function checkArith() {
             var a = parseFloat(document.getElementById('numb1Box').value);
             var o = document.getElementById('oppBox').value;
             var b = parseFloat(document.getElementById('numb2Box').value);
             var ans = parseFloat(document.getElementById('answerBox').value);
             var result;
-            switch(o){
+            switch (o) {
                 case '+':
-                    if (a + b === ans){
-                    result= "Correct. Good job!";
+                    if (a + b === ans) {
+                        result = "Correct. Good job!";
                     } else {
-                     result= "Incorrect. Try again!";
-                    } break; 
-            case '-':
-                    if (a - b === ans){
-                    result= "Correct. Good job!";
-                    } else {
-                    result= "Incorrect. Try again!";
-                    } break; 
-            case '*':
-                    if (a * b === ans){
-                    result= "Correct. Good job!";
-                    } else {
-                    result= "Incorrect. Try again!";
-                    } break; 
-            case '/':
-                    if (a / b === ans){
-                    result= "Correct. Good job!";
-                    } else {
-                    result= "Incorrect. Try again!";
+                        result = "Incorrect. Try again!";
                     } break;
-            default:
+                case '-':
+                    if (a - b === ans) {
+                        result = "Correct. Good job!";
+                    } else {
+                        result = "Incorrect. Try again!";
+                    } break;
+                case '*':
+                    if (a * b === ans) {
+                        result = "Correct. Good job!";
+                    } else {
+                        result = "Incorrect. Try again!";
+                    } break;
+                case '/':
+                    if (a / b === ans) {
+                        result = "Correct. Good job!";
+                    } else {
+                        result = "Incorrect. Try again!";
+                    } break;
+                default:
                     "Please check your entries and try again!"
             }
 
             document.getElementById('checkDiv').innerHTML = result;
-}
-    
+        }
+
     </script>
 </head>
+
 <body>
     <div id="content">
-    <h2>How Many Evens Are Present?</h2>
-    <textarea id="userInput" rows="10" cols="10" placeholder="Enter one number per line"></textarea> <br>
-    <button type="button" onclick="runArray1()">Submit</button><br>
-    <div id="outputDiv"class="displays"></div><br>
-    
-    <h2>Multiply The Numbers</h2>
-Enter Multiplier: <input type="text" id="intBox"><br>
-    <button type="button" onclick="runArray2()">Multiply</button><br>
-    <div id="multiplyDiv" class="displays"></div><br>
+        <h2>How Many Evens Are Present?</h2>
+        <textarea id="userInput" rows="10" cols="10" placeholder="Enter one number per line"></textarea> <br>
+        <button type="button" onclick="runArray1()">Submit</button><br>
+        <div id="outputDiv" class="displays"></div><br>
 
-    <h2>Test Your Math Skills!</h2> 
+        <h2>Multiply The Numbers</h2>
+        Enter Multiplier: <input type="text" id="intBox"><br>
+        <button type="button" onclick="runArray2()">Multiply</button><br>
+        <div id="multiplyDiv" class="displays"></div><br>
 
-    <input type="text" id="numb1Box" placeholder="ex. 23">
-    <input type="text" id="oppBox" placeholder="+, -, *, or /">
-    <input type="text" id="numb2Box" placeholder="ex. 12"> 
-    = <input type="text" id="answerBox" placeholder="ex. 3"><br>
-    <button type="button" onclick="checkArith()">Check</button> <br>
-    <div id="checkDiv" class="displays"></div> <br>
+        <h2>Test Your Math Skills!</h2>
+
+        <input type="text" id="numb1Box" placeholder="ex. 23">
+        <input type="text" id="oppBox" placeholder="+, -, *, or /">
+        <input type="text" id="numb2Box" placeholder="ex. 12">
+        = <input type="text" id="answerBox" placeholder="ex. 3"><br>
+        <button type="button" onclick="checkArith()">Check</button> <br>
+        <div id="checkDiv" class="displays"></div> <br>
     </div>
 </body>
+
 </html>
