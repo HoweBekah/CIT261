@@ -16,24 +16,32 @@
         request.open('GET', url);
         request.responseType = 'text';
         request.send(); 
-        var quotetext = request.response;
+        
+        function ronQuote() {
+            var quotetext = request.response;
         var quote = JSON.parse(quotetext);
         var ran = getRandomInt(5);
-
-        function ronQuote() {
             var ron = quote["ron"];
             var picked = ron[ran];
-            document.getElementById('quote').innerHTML = '"' + picked + '"';
+            document.getElementById('ronquote').innerHTML = '"' + picked + '"';
         }
 function lesQuote() {
+var quotetext = request.response;
+var quote = JSON.parse(quotetext);
+var ran = getRandomInt(5);
+
 var les = quote["leslie"];
 var picked = les[ran];
-document.getElementById('quote').innerHTML = '"' + picked + '"';
+document.getElementById('lesquote').innerHTML = '"' + picked + '"';
 }
 function tomQuote() {
+var quotetext = request.response;
+var quote = JSON.parse(quotetext);
+var ran = getRandomInt(5);
+
 var tom = quote["tom"];
 var picked = tom[ran];
-document.getElementById('quote').innerHTML = '"' + picked + '"';
+document.getElementById('tomquote').innerHTML = '"' + picked + '"';
 }
         function getRandomInt(max) {
             return Math.floor(Math.random() * Math.floor(max));
@@ -42,19 +50,19 @@ document.getElementById('quote').innerHTML = '"' + picked + '"';
 </head>
 
 <body>
-    <h1>Ron Swanson Quote Generator</h1>
+    <h1>Parks and Recreation Quote Generator</h1>
 
     <section class="container">
         <button type="button" onclick="ronQuote()">Ron</button>
-        <p id="quote">Quote Goes Here...</p>
+        <p id="ronquote">Quote Goes Here...</p>
     </section>
     <section class="container">
         <button type="button" onclick="lesQuote()">Leslie</button>
-        <p id="quote">Quote Goes Here...</p>
+        <p id="lesquote">Quote Goes Here...</p>
     </section>
     <section class="container">
         <button type="button" onclick="tomQuote()">Tom</button>
-        <p id="quote">Quote Goes Here...</p>
+        <p id="tomquote">Quote Goes Here...</p>
     </section>
 
 

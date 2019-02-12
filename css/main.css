@@ -1,11 +1,13 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
-* { margin: 0; box-sizing: border-box; } 
-
-body { 
-    font-size: 16px; 
+body {
+    font-size: 16px;
     line-height: 32px;
     font-family: 'Shadows Into Light', cursive;
-    
+
 }
 
 h1 {
@@ -21,29 +23,35 @@ h2 {
     text-align: left;
     padding: .5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid  rgb(98, 114, 255);
+    border-bottom: 2px solid rgb(98, 114, 255);
 }
 
 li a:hover {
     background-color: antiquewhite;
 }
+
 footer a:hover {
-    background-color:  rgb(98, 114, 255) ;
+    background-color: rgb(98, 114, 255);
 }
+
 main {
     font-size: 1.5rem;
-    background-color:lightpink;
+    background-color: lightpink;
     color: rgb(97, 42, 3);
 
 }
 
-header, main, footer {
+header,
+main,
+footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 80%;
 }
 
-header, footer, footer a {
+header,
+footer,
+footer a {
     text-align: left;
     background-color: rgb(177, 15, 15);
     color: whitesmoke;
