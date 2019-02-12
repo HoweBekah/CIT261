@@ -1,6 +1,19 @@
-["Just give me all the bacon and eggs you have. Wait...wait. I worry what you just heard was: Give me a lot of bacon and eggs. What I said was: Give me all the bacon and eggs you have. Do you understand?"]
-["My only official recommendations are US Army-issued mustache trimmers, Morton's Salt, and the C.R. Lawrence Fein two inch axe-style scraper oscillating knife blade."]
-["The less I know about other people's affairs, the happier I am. I'm not interested in caring about people. I once worked with a guy for three years and never learned his name. Best friend I ever had. We still never talk sometimes."]
+{
+    "ron": [{
+            "quote": "Just give me all the bacon and eggs you have. Wait...wait. I worry what you just heard was: Give me a lot of bacon and eggs. What I said was: Give me all the bacon and eggs you have. Do you understand?"
+        },
+        {
+            "quote": "My only official recommendations are US Army-issued mustache trimmers, Morton's Salt, and the C.R. Lawrence Fein two inch axe-style scraper oscillating knife blade."
+        },
+        {
+            "quote": "The less I know about other people's affairs, the happier I am. I'm not interested in caring about people. I once worked with a guy for three years and never learned his name. Best friend I ever had. We still never talk sometimes."
+        },
+
+        {
+            "quote": "Clear alcohols are for rich women on diets."
+        },
+        {
+            "quote": "Strippers do nothing for me…but I will take a free breakfast buffet anytime, anyplace."
+        }
+    ]
 }
-["Clear alcohols are for rich women on diets."]
-["Strippers do nothing for me…but I will take a free breakfast buffet anytime, anyplace."]

@@ -20,8 +20,8 @@
         function getQuote() {
             var quotetext = request.response;
             var ronquote = JSON.parse(quotetext);
-            var ron = ronquote["ron"];
-            document.getElementById('quote').innerHTML = '"' + ron + '"';
+            var ronq = ronquote.ron.quote;
+            document.getElementById('quote').innerHTML = '"' + ronq + '"';
         }
 
     </script>
