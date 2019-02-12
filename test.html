@@ -11,7 +11,7 @@
     </style>
     <title>JavaScript Objects Evidence</title>
     <script>
-        var url = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
+        var url = 'https://howebekah.github.io/CIT261/ronquotes.json';
         var request = new XMLHttpRequest();
         request.open('GET', url);
         request.responseType = 'text';
@@ -20,15 +20,16 @@
         function getQuote() {
             var quotetext = request.response;
             var ronquote = JSON.parse(quotetext);
-
-            document.getElementById('quote').innerHTML = '"' + ronquote + '"';
+            var ron = ronquote["ron"];
+            document.getElementById('quote').innerHTML = '"' + ron + '"';
         }
+
     </script>
 </head>
 
 <body>
     <h1>Ron Swanson Quote Generator</h1>
-    <p>(4 ways of writing AJAX requests)</p>
+
     <section class="container">
         <button type="button" onclick="getQuote()">Submit</button>
 
