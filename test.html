@@ -20,10 +20,13 @@
         function getQuote() {
             var quotetext = request.response;
             var ronquote = JSON.parse(quotetext);
-            var ronq = ronquote.ron.quote;
+            var ran = getRandomInt(5);
+            var ronq = ronquote.ron[ran];
             document.getElementById('quote').innerHTML = '"' + ronq + '"';
         }
-
+function getRandomInt(max) {
+return Math.floor(Math.random() * Math.floor(max));
+}
     </script>
 </head>
 
