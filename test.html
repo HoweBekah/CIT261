@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="copy.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
     </style>
@@ -21,12 +21,16 @@
             var quotetext = request.response;
             var ronquote = JSON.parse(quotetext);
             var ran = getRandomInt(5);
-            var ronq = ronquote.ron[ran];
-            document.getElementById('quote').innerHTML = '"' + ronq + '"';
+            var ron = ronquote["ron"];
+            var picked = ron[ran];
+            document.getElementById('quote').innerHTML = '"' + picked + '"';
         }
-function getRandomInt(max) {
-return Math.floor(Math.random() * Math.floor(max));
-}
+        function pickQuote(){
+
+        }
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
     </script>
 </head>
 
