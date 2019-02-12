@@ -96,6 +96,15 @@ h4 {
     border: .2rem dashed whitesmoke;
 }
 
+#andyquote {
+    background-color: rgb(98, 114, 255);
+    color: whitesmoke;
+    padding: .5rem;
+    margin: 1rem;
+    font-family: 'Crimson Text', serif;
+    border: .2rem dashed whitesmoke;
+}
+
 button {
     font-family: 'Shadows Into Light',
         cursive;
