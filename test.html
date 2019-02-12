@@ -11,23 +11,30 @@
     </style>
     <title>JavaScript Objects Evidence</title>
     <script>
-        var url = 'https://howebekah.github.io/CIT261/ronquotes.json';
+        var url = 'https://howebekah.github.io/CIT261/pandrquotes.json';
         var request = new XMLHttpRequest();
         request.open('GET', url);
         request.responseType = 'text';
-        request.send();
+        request.send(); 
+        var quotetext = request.response;
+        var quote = JSON.parse(quotetext);
+        var ran = getRandomInt(5);
 
-        function getQuote() {
-            var quotetext = request.response;
-            var ronquote = JSON.parse(quotetext);
-            var ran = getRandomInt(5);
-            var ron = ronquote["ron"];
+        function ronQuote() {
+            var ron = quote["ron"];
             var picked = ron[ran];
             document.getElementById('quote').innerHTML = '"' + picked + '"';
         }
-        function pickQuote(){
-
-        }
+function lesQuote() {
+var les = quote["leslie"];
+var picked = les[ran];
+document.getElementById('quote').innerHTML = '"' + picked + '"';
+}
+function tomQuote() {
+var tom = quote["tom"];
+var picked = tom[ran];
+document.getElementById('quote').innerHTML = '"' + picked + '"';
+}
         function getRandomInt(max) {
             return Math.floor(Math.random() * Math.floor(max));
         }
@@ -38,12 +45,19 @@
     <h1>Ron Swanson Quote Generator</h1>
 
     <section class="container">
-        <button type="button" onclick="getQuote()">Submit</button>
-
+        <button type="button" onclick="ronQuote()">Ron</button>
+        <p id="quote">Quote Goes Here...</p>
+    </section>
+    <section class="container">
+        <button type="button" onclick="lesQuote()">Leslie</button>
+        <p id="quote">Quote Goes Here...</p>
+    </section>
+    <section class="container">
+        <button type="button" onclick="tomQuote()">Tom</button>
+        <p id="quote">Quote Goes Here...</p>
     </section>
 
 
-    <p id="quote">Quote Goes Here...</p>
 
 </body>
 
