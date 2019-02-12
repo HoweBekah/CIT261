@@ -45,20 +45,28 @@ h4 {
 #characters {
     display: grid;
     grid-auto-columns: repeat(3, 1fr);
-    padding: .5rem;
+    grid-auto-rows: repeat(2, 1fr) padding: .5rem;
 }
 
 
 #ronq {
     grid-column: 1;
+    grid-row: 1;
 }
 
 #lesq {
     grid-column: 2;
+    grid-row: 1;
 }
 
 #tomq {
     grid-column: 3;
+    grid-row: 1;
+}
+
+#andyq {
+    grid-column: 1;
+    grid-row: 2;
 }
 
 #ronquote {

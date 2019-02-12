@@ -45,6 +45,15 @@
         var picked = tom[ran];
         document.getElementById("tomquote").innerHTML = '"' + picked + '"';
       }
+function andyQuote() {
+var quotetext = request.response;
+var quote = JSON.parse(quotetext);
+var ran = getRandomInt(5);
+
+var tom = quote["andy"];
+var picked = andy[ran];
+document.getElementById("tomquote").innerHTML = '"' + picked + '"';
+}
       function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
       }
@@ -67,6 +76,10 @@
             <section id="tomq">
                 <button type="button" onclick="tomQuote()">Tom</button><br>
                 <p id="tomquote"></p>
+            </section>
+            <section id="andyq">
+                <button type="button" onclick="andyQuote()">Tom</button><br>
+                <p id="andyuote"></p>
             </section>
         </div>
     </div>
