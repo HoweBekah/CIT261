@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/topic4.css" />
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/topic4.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
         @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
     </style>
-    <title>AJAX Evidence</title>
-    <script>
-        var url = "https://howebekah.github.io/CIT261/pandrquotes.json";
+  <title>AJAX Evidence</title>
+  <script>
+    var url = "https://howebekah.github.io/CIT261/json/pandrquotes.json";
       var request = new XMLHttpRequest();
       request.open("GET", url);
       request.responseType = "text";
@@ -61,28 +61,28 @@
 </head>
 
 <body>
-    <div id="content">
-        <h1>Parks and Recreation Quote Generator</h1>
-        <h4>Love Parks and Rec? Enjoy quotes from some of the main characters!</h4><br>
-        <div id="characters">
-            <section id="ronq">
-                <button type="button" onclick="ronQuote()">Ron</button><br>
-                <p id="ronquote"></p>
-            </section>
-            <section id="lesq">
-                <button type="button" onclick="lesQuote()">Leslie</button><br>
-                <p id="lesquote"></p>
-            </section>
-            <section id="tomq">
-                <button type="button" onclick="tomQuote()">Tom</button><br>
-                <p id="tomquote"></p>
-            </section>
-            <section id="andyq">
-                <button type="button" onclick="andyQuote()">Andy</button><br>
-                <p id="andyquote"></p>
-            </section>
-        </div>
+  <div id="content">
+    <h1>Parks and Recreation Quote Generator</h1>
+    <h4>Love Parks and Rec? Enjoy quotes from some of the main characters!</h4><br>
+    <div id="characters">
+      <section id="ronq">
+        <button type="button" onclick="ronQuote()">Ron</button><br>
+        <p id="ronquote"></p>
+      </section>
+      <section id="lesq">
+        <button type="button" onclick="lesQuote()">Leslie</button><br>
+        <p id="lesquote"></p>
+      </section>
+      <section id="tomq">
+        <button type="button" onclick="tomQuote()">Tom</button><br>
+        <p id="tomquote"></p>
+      </section>
+      <section id="andyq">
+        <button type="button" onclick="andyQuote()">Andy</button><br>
+        <p id="andyquote"></p>
+      </section>
     </div>
+  </div>
 </body>
 
 </html>
