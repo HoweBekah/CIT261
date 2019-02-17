@@ -6,10 +6,12 @@ request.open('GET', requestURL);
 request.responseType = 'text';
 request.send();
 
+
 request.onload = function () {
     var afiText = request.response;
     var afimovies = JSON.parse(afiText);
     showMovies(afimovies);
+
 }
 
 function showMovies(jsonObj) {
@@ -37,11 +39,12 @@ function showMovies(jsonObj) {
     }
 }
 
-function myFunction() {
-    var newMovie = document.createElement("LI");
-    var textnode = document.createTextNode("Water");
-    newItem.appendChild(textnode);
+function removeKid() {
+    var afiText = request.response;
+    var afimovies = JSON.parse(afiText);
+    for (var i = 0; i < afimovies.length; i++) {
 
-    var list = document.getElementById("myList");
-    list.insertBefore(newItem, list.childNodes[0]);
+        var list = afimovies[i];
+        list.removeChild(year);
+    }
 }
