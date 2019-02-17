@@ -38,13 +38,3 @@ function showMovies(jsonObj) {
         section.appendChild(myArticle);
     }
 }
-
-function removeKid() {
-    var afiText = request.response;
-    var afimovies = JSON.parse(afiText);
-    for (var i = 0; i < afimovies.length; i++) {
-
-        var list = afimovies[i];
-        list.removeChild(year);
-    }
-}

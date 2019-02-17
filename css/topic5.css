@@ -11,8 +11,8 @@
 }
 
 body {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1rem;
+
     font-family: 'Shadows Into Light', cursive;
     background-color: lightpink;
     color: rgb(97, 42, 3);
@@ -26,6 +26,7 @@ h1 {
 }
 
 h2 {
+
     display: inline-block;
     font-size: 4em;
     border-bottom: .25rem dashed rgb(98, 114, 255);
@@ -36,12 +37,13 @@ h2 {
 
 h4 {
 
-    font-size: 1em;
+    font-size: 2em;
     text-align: left;
     padding: .5rem;
     padding-bottom: .5rem;
 
 }
+
 
 main {
     font-size: 1.5rem;
@@ -58,6 +60,7 @@ section article {
     text-align: left;
     width: 33%;
     float: left;
+    font-size: 1rem;
 
 }
 
