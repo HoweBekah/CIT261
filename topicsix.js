@@ -9,8 +9,7 @@ request.send();
 request.onload = function () {
     var afiText = request.response;
     var afimovies = JSON.parse(afiText);
-    populateHeader(afimovies);
-    showHeroes(afimovies);
+    showMovies(afimovies);
 }
 
 function showMovies(jsonObj) {
