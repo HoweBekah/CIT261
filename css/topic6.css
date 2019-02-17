@@ -10,6 +10,7 @@ body {
     background-color: lightpink;
     color: rgb(97, 42, 3);
     width: 75%;
+    justify-content: center;
 }
 
 h1 {
