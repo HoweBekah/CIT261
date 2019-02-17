@@ -1,7 +1,7 @@
 var header = document.querySelector('header');
 var section = document.querySelector('section');
 
-var requestURL = 'https://howebekah.github.io/CIT261/json/villain.json';
+var requestURL = 'https://howebekah.github.io/CIT261/json/topmovies.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'text';
