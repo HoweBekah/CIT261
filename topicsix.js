@@ -1,4 +1,3 @@
-var header = document.querySelector('header');
 var section = document.querySelector('section');
 
 var requestURL = 'https://howebekah.github.io/CIT261/json/topmovies.json';
