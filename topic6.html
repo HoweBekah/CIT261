@@ -14,17 +14,23 @@
 </head>
 
 <body>
-    <h1>AFI Top 15 Movies</h1>
-    <h2>What would be on YOUR AFI top list of movies?</h2>
-    <input type="text" id="titleBox">
-    <input type="text" id="ratingBox">
-    <input type="text" id="directorBox">
-    <input type="text" id="yearBox"><br>
-    <button type="button" onclick="checkArith()">Add</button>
-    <section>
+    <div id="content">
+        <h1>AFI Top 15 Movies</h1>
+        <h2>What would YOU add to the AFI top movies list?</h2>
+        Title: <input type="text" id="titleBox">
+        Rating: <input type="text" id="ratingBox">
+        Director: <input type="text" id="directorBox">
+        Year: <input type="text" id="yearBox"><br>
+        <button type="button" onclick="showMovielist()">Add</button><br><br>
+        <section id="myAFI">
 
-    </section>
+        </section>
+        <section>
+
+        </section>
+    </div>
     <script src="topicsix.js"></script>
+    <script src="topicsixinput.js"></script>
 </body>
 
 </html>

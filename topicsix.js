@@ -23,7 +23,7 @@ function showMovies(jsonObj) {
         var myPara3 = document.createElement('p');
 
 
-        myH4.textContent = movies[i].title;
+        myH4.textContent = (i + 1) + ". " + movies[i].title;
         myPara1.textContent = 'Rating: ' + movies[i].rating;
         myPara2.textContent = 'Director: ' + movies[i].director;
         myPara3.textContent = 'Year: ' + movies[i].year;
@@ -35,4 +35,13 @@ function showMovies(jsonObj) {
 
         section.appendChild(myArticle);
     }
+}
+
+function myFunction() {
+    var newMovie = document.createElement("LI");
+    var textnode = document.createTextNode("Water");
+    newItem.appendChild(textnode);
+
+    var list = document.getElementById("myList");
+    list.insertBefore(newItem, list.childNodes[0]);
 }
