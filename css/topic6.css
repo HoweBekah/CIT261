@@ -3,23 +3,16 @@
     box-sizing: border-box;
 }
 
-#content {
-    width: 75%;
-    justify-content: center;
-    margin: 0 auto;
-}
-
 body {
     font-size: 16px;
     line-height: 32px;
     font-family: 'Shadows Into Light', cursive;
-    background-color: lightpink;
-    color: rgb(97, 42, 3);
 
 }
 
 h1 {
-    padding: .5rem;
+    padding: 1rem;
+    padding-left: 0rem;
     font-size: 4em;
     color: rgb(98, 114, 255);
 }
@@ -27,19 +20,18 @@ h1 {
 h2 {
 
     font-size: 2em;
-
-    padding: .5rem;
-    padding-bottom: 2.5rem;
-
-}
-
-h4 {
-
-    font-size: 1em;
     text-align: left;
     padding: .5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(98, 114, 255);
+}
 
+li a:hover {
+    background-color: antiquewhite;
+}
+
+footer a:hover {
+    background-color: rgb(98, 114, 255);
 }
 
 main {
@@ -49,17 +41,29 @@ main {
 
 }
 
-section article {
-    text-align: left;
-    width: 33%;
-    float: left;
-
-}
-
 header,
 main,
 footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 80%;
+}
+
+header,
+footer,
+footer a {
+    text-align: left;
+    background-color: rgb(177, 15, 15);
+    color: whitesmoke;
+}
+
+header img {
+    width: 250px;
+    height: auto;
+    float: right;
+    border: 3px solid whitesmoke;
+}
+
+footer {
+    font-size: 1em;
 }
