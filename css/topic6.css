@@ -24,7 +24,7 @@ h4 {
     text-align: left;
     padding: .5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgb(98, 114, 255);
+    border-right: 2px solid rgb(98, 114, 255);
 }
 
 li a:hover {
@@ -43,7 +43,7 @@ main {
 }
 
 section article {
-
+    text-align: left;
     width: 33%;
     float: left;
 }
