@@ -7,7 +7,8 @@ body {
     font-size: 16px;
     line-height: 32px;
     font-family: 'Shadows Into Light', cursive;
-
+    background-color: lightpink;
+    color: rgb(97, 42, 3);
 }
 
 h1 {
@@ -17,7 +18,7 @@ h1 {
     color: rgb(98, 114, 255);
 }
 
-h2 {
+h4 {
 
     font-size: 2em;
     text-align: left;
@@ -39,6 +40,12 @@ main {
     background-color: lightpink;
     color: rgb(97, 42, 3);
 
+}
+
+section article {
+
+    width: 33%;
+    float: left;
 }
 
 header,
