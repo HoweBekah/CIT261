@@ -18,21 +18,22 @@ h1 {
     color: rgb(98, 114, 255);
 }
 
-h4 {
+h2 {
 
     font-size: 2em;
     text-align: left;
     padding: .5rem;
     padding-bottom: 1rem;
-    border-right: 2px solid rgb(98, 114, 255);
+
 }
 
-li a:hover {
-    background-color: antiquewhite;
-}
+h4 {
 
-footer a:hover {
-    background-color: rgb(98, 114, 255);
+    font-size: 1em;
+    text-align: left;
+    padding: .5rem;
+    padding-bottom: .5rem;
+
 }
 
 main {
@@ -46,6 +47,7 @@ section article {
     text-align: left;
     width: 33%;
     float: left;
+    border-left: 2px solid rgb(98, 114, 255);
 }
 
 header,
