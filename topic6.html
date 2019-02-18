@@ -13,10 +13,19 @@
     <title>DOM Evidence</title>
 </head>
 
-<body>
-    <div id="content">
+<body id="content">
+    <section></section><br><br>
 
-    </div>
+    <input type="text" id="itemBox" placeholder="broccoli, chips, milk..."><br><br>
+    <button type="button" onclick="addItem()">Add Item</button> <br><br>
+    <button type="button" onclick="removeItem()">Remove Last Item</button> <br>
+    <div id="outputDiv" class="displays"></div><br><br><br>
+    <article id="groceries">
+        <ol id="list">
+
+        </ol>
+    </article>
+    <script src="js/topicsix.js"></script>
 </body>
 
 </html>
