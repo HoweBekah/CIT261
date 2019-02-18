@@ -3,67 +3,48 @@
     box-sizing: border-box;
 }
 
+#content {
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
 body {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1rem;
+
     font-family: 'Shadows Into Light', cursive;
-
-}
-
-h1 {
-    padding: 1rem;
-    padding-left: 0rem;
-    font-size: 4em;
-    color: rgb(98, 114, 255);
-}
-
-h2 {
-
-    font-size: 2em;
-    text-align: left;
-    padding: .5rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid rgb(98, 114, 255);
-}
-
-li a:hover {
-    background-color: antiquewhite;
-}
-
-footer a:hover {
-    background-color: rgb(98, 114, 255);
-}
-
-main {
-    font-size: 1.5rem;
     background-color: lightpink;
     color: rgb(97, 42, 3);
 
 }
 
-header,
-main,
-footer {
-    margin: 1.25rem auto;
+h1 {
+    margin-bottom: 0;
+    font-size: 4em;
+    color: rgb(98, 114, 255);
+}
+
+h2 {
+    display: inline-block;
+    font-size: 4em;
+    border-bottom: .25rem dashed rgb(98, 114, 255);
     padding: .5rem;
-    max-width: 80%;
+    margin-bottom: 2.5rem;
+
 }
 
-header,
-footer,
-footer a {
+h4 {
+
+    font-size: 2em;
     text-align: left;
-    background-color: rgb(177, 15, 15);
-    color: whitesmoke;
+    padding: .5rem;
+    padding-bottom: .5rem;
 }
 
-header img {
-    width: 250px;
-    height: auto;
-    float: right;
-    border: 3px solid whitesmoke;
-}
+main {
 
-footer {
-    font-size: 1em;
+    background-color: lightpink;
+    color: rgb(97, 42, 3);
+
 }
