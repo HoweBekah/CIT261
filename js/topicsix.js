@@ -19,5 +19,8 @@ function addItem() {
 
 function removeItem() {
     var list = document.getElementById("list");
-    list.removeChild(list.childNodes[0]);
+    var listItems = list.getElementsByTagName("li");
+
+    var last = listItems[listItems.length - 1];
+    list.removeChild(last);
 }
