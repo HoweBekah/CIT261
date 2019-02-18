@@ -10,16 +10,14 @@ onload = function () {
 
 function addItem() {
     var listing = document.createElement("li");
-
-    // Get a reference to the element, before we want to insert the element
-    var item = document.getElementById("itemBox").nodeValue;
-    // Get a reference to the parent element
-    var list = item.list;
-
-    // Insert the new element into the DOM before sp2
-    list.insertBefore(item, item.nextSibling);
+    var itemText = document.getElementById("itemBox").value;
+    var item = document.createTextNode(itemText);
+    listing.appendChild(item);
+    var list = document.getElementById("list");
+    list.insertBefore(listing, list.nextElementSibling);
 }
 
 function removeItem() {
-
+    var list = document.getElementById("list");
+    list.removeChild(list.childNodes[0]);
 }
