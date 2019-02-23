@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: lightpink;
+    color: rgb(97, 42, 3);
+}
+
+h1 {
+    border-bottom: .25rem dashed rgb(97, 42, 3);
+    font-size: 4em;
+    color: rgb(98, 114, 255);
+    display: inline-block;
+}
+
+h2 {
+    font-size: 2em;
+    padding: .5rem;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h4 {
+    font-size: 2em;
+    text-align: left;
+    padding: .5rem;
+    padding-bottom: .5rem;
+}
+
+main {
+    background-color: lightpink;
+    color: rgb(97, 42, 3);
+}
+
+button {
+    font-size: 2rem;
+    background-color: rgb(97, 42, 3);
+    color: whitesmoke;
+    display: inline;
+}
+
+input {
+    font-size: 1.5rem;
+}
+
+li {
+    font-size: 3rem;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
