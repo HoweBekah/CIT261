@@ -36,5 +36,6 @@ function showMovies(jsonObj) {
         myArticle.appendChild(myPara3);
 
         section.appendChild(myArticle);
+
     }
 }
