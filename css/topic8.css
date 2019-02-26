@@ -1,0 +1,163 @@
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+body {
+    width: 75%;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    background-color: lightpink;
+    color: rgb(97, 42, 3);
+    margin: auto;
+}
+
+h1 {
+    padding: 1rem;
+    padding-left: 0rem;
+    font-size: 4em;
+    color: rgb(98, 114, 255);
+}
+
+h2 {
+
+    font-size: 2em;
+    text-align: left;
+    padding: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(98, 114, 255);
+}
+
+#squareheading {
+    text-align: left;
+    display: inline-block;
+}
+
+header,
+main {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 80%;
+}
+
+header {
+    text-align: left;
+    background-color: rgb(177, 15, 15);
+    color: whitesmoke;
+}
+
+#movebox {
+    grid-column: 1;
+    text-align: center;
+}
+
+#spinsquares {
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+button {
+    margin-top: 1rem;
+    box-shadow: 3px 3px 3px brown;
+}
+
+div#loader {
+    position: relative;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 2rem;
+}
+
+div#loader .red {
+    display: inline-block;
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background: rgb(134, 10, 10);
+    transform-origin: 50% 50%;
+    animation: rotating 1s infinite;
+}
+
+
+div#loader .white {
+    display: inline-block;
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    top: 1rem;
+    left: 1rem;
+    background: white;
+    transform-origin: 50% 50%;
+    animation: rotating 2s infinite;
+}
+
+div#loader .blue {
+    display: inline-block;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 2rem;
+    left: 2rem;
+    background: rgb(50, 50, 119);
+    transform-origin: 50% 50%;
+    animation: rotating 3s infinite;
+}
+
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(134, 10, 10);
+    position: absolute;
+    left: 10rem;
+    top: 0;
+
+}
+
+.box2 {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(50, 50, 119);
+    position: absolute;
+    left: 30rem;
+    top: 0px;
+}
+
+.box3 {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(134, 10, 10);
+    position: absolute;
+    left: 30rem;
+    top: 20rem;
+}
+
+.box4 {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(50, 50, 119);
+    position: absolute;
+    left: 10rem;
+    top: 20rem;
+}
+
+#littlebox {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}

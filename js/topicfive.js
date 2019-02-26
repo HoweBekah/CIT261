@@ -36,6 +36,8 @@ function showMovies(jsonObj) {
         myArticle.appendChild(myPara3);
 
         section.appendChild(myArticle);
-
+        /*Add class or name in the for loop by adding an if statement with modulus i to assign 
+        alternating classes to each article. 
+        add class the the myH4 element to be able to change the text shadow.*/
     }
 }
