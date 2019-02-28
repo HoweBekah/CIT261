@@ -84,7 +84,7 @@ ul {
 
 section.flashcard {
     margin: auto;
-    width: 75%;
+
 }
 
 section.flashcard div.question {
@@ -97,7 +97,6 @@ section.flashcard div.question {
     box-shadow: .25rem .25rem .25rem rgb(97, 42, 3);
     font-size: 2rem;
     font-weight: bold;
-
 
 }
 
