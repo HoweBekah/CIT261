@@ -2,18 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/topic9.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/topic9.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+        @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
     </style>
     <title>JavaScript Events Evidence</title>
 </head>
 
 <body>
+    <div id="content">
+        <section id="madlibs">
+            <h1>Mad Libs</h1>
+
+            <ul id="libwords">
+                <li>Job: <input type="text" id="job" /></li>
+                <li>Verb: <input type="text" id="verb" /></li>
+                <li>Someone's Name: <input type="text" id="person" /></li>
+                <li>Place: <input type="text" id="place" /></li>
+                <li>Movie: <input type="text" id="movie" /></li>
+            </ul>
+
+            <input type="button" id="libButton" value="Lib it!" /><br />
+
+            <div id="story"></div>
+        </section>
+        <section id="pictureTransfer">
+
+            <a href="#">
+                <img src="images/jettdog.jpg" alt="Black male chihuahua looking regal" onMouseOver="this.src='images/profilepicture.jpg';"
+                    alt="Woman holding her black male chihuahua" onMouseOut="this.src='images/jettdog.jpg';" /></a>
+        </section>
+        <section id="flashcards">
+            <h1>Flashcards</h1>
+            <h3>Word of the Day according to <a href="https://www.dictionary.com/e/">dictionary.com</a> from Feb. 23,
+                2019 to Feb.
+                28, 2019</h3>
+
+            <div id="wholeflash">
+
+                <section id="1" class="flashcard">
+                    <div class="question">Petrichor</div>
+                    <div class="answer">A distinctive scent, usually described as earthy,
+                        pleasant, or sweet,
+                        produced by rainfall on
+                        very
+                        dry ground.</div>
+                </section>
+
+                <section id="2" class="flashcard">
+                    <div class="question">Divertissement</div>
+                    <div class="answer">A diversion or entertainment.</div>
+                </section>
+                <section id="3" class="flashcard">
+                    <div class="question">Cozen</div>
+                    <div class="answer">To cheat, deceive, or trick.</div>
+                </section>
+
+                <section id="4" class="flashcard">
+                    <div class="question">Evenfall</div>
+                    <div class="answer">Twilight; dusk; the beginning of evening.</div>
+                </section>
+                <section id="5" class="flashcard">
+                    <div class="question">Halidom</div>
+                    <div class="answer">A holy place, as a church or sanctuary.</div>
+                </section>
+                <section id="6" class="flashcard">
+                    <div class="question">Prodigal</div>
+                    <div class="answer">Wastefully or recklessly extravagant: prodigal expenditure.</div>
+                </section>
+
+                <section id="7" class="flashcard">
+                    <div class="question">Futilitarian</div>
+                    <div class="answer">A person who believes that human hopes are vain, and human strivings
+                        unjustified.</div>
+                </section>
+            </div>
+        </section>
+    </div>
     <script src="js/topicnine.js"></script>
 </body>
 
