@@ -1,0 +1,38 @@
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+body {
+    width: 75%;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    background-color: lightpink;
+    color: rgb(97, 42, 3);
+    margin: auto;
+}
+
+h1 {
+    padding: 1rem;
+    padding-left: 0rem;
+    font-size: 4em;
+    color: rgb(98, 114, 255);
+}
+
+h2 {
+
+    font-size: 2em;
+    text-align: left;
+    padding: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(98, 114, 255);
+}
+
+main {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 80%;
+}
