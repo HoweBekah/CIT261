@@ -11,14 +11,14 @@ body {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1.5rem;
     background-color: lightpink;
-    color: rgb(97, 42, 3);
+    color: #612A03;
     margin: auto;
 }
 
 h2 {
 
     font-size: 2em;
-    color: rgb(98, 114, 255);
+    color: #6272FF;
 }
 
 
@@ -28,21 +28,31 @@ main {
     max-width: 80%;
 }
 
+#canvasDiv,
 #audioDiv,
 #videoDiv {
     margin: auto;
     text-align: center;
 }
 
+#videoDiv {
+    padding-bottom: 2rem;
+}
+
 video {
     border: .25rem solid whitesmoke;
     box-shadow: .25rem .25rem .25rem rgb(97, 42, 3);
-}
 
-footer {
-    font-size: 1rem;
 }
 
 #ogDrawing {
     display: none;
+}
+
+#audioDiv {
+    border-top: .25rem ridge #612A03;
+    border-bottom: .25rem ridge #612A03;
+    padding-top: 0;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
 }
