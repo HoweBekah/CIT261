@@ -56,3 +56,9 @@ video {
     margin-top: 1rem;
     padding-bottom: 2rem;
 }
+
+#canvas {
+    border: .5rem solid rgb(97, 42, 3);
+    background-color: rgba(98, 114, 255, .75);
+
+}
