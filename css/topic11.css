@@ -1,17 +1,19 @@
 #content {
+    padding-top: 6rem;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2.5rem;
+    grid-template-rows: 1fr 1fr 2fr;
+    text-align: center;
 }
 
 body {
     width: 75%;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 3rem;
+    line-height: 3rem;
     font-family: 'Shadows Into Light', cursive;
-    font-size: 1.5rem;
     background-color: lightpink;
-    color: #612A03;
+    color: lightpink;
     margin: auto;
 }
 
@@ -22,28 +24,161 @@ h2 {
 }
 
 
-main {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 80%;
-}
-
-#testing {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(0, 110, 255);
-    animation-name: animation;
+#colorandsize {
+    padding: .75rem;
+    font-size: 3rem;
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+    width: 12rem;
+    height: 12rem;
+    background-color: #6272FF;
+    animation-name: multicolor;
     animation-duration: 4s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    transition: width 1s, height 2s;
 }
 
-@keyframes animation {
+#colorandsize:hover {
+    width: 24rem;
+    height: 28rem;
+}
+
+
+@keyframes multicolor {
+    0% {
+        background-color: #612A03;
+    }
+
+    25% {
+        background-color: whitesmoke;
+    }
+
+    50% {
+        background-color: #6272FF;
+    }
+
+    75% {
+        background-color: #612A03;
+    }
+
+    100% {
+        background-color: whitesmoke;
+    }
+}
+
+#oppmove {
+    width: 0;
+    height: 0;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-top: 12rem solid whitesmoke;
+    position: relative;
+    animation-name: sqmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#movesqr {
+    width: 0;
+    height: 0;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-bottom: 12rem solid #612A03;
+    position: relative;
+    animation-name: sqmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sqmove {
+    0% {
+        left: 0;
+        top: 24rem;
+    }
+
+    25% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: 24rem;
+        top: 0;
+    }
+
+    75% {
+        left: 24rem;
+        top: 24rem;
+    }
+
+    100% {
+        left: 0;
+        top: 24rem;
+    }
+}
+
+#jett {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1;
+    width: 12rem;
+    height: auto;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
     from {
-        background-color: rgb(160, 138, 98);
+        transform: scale(2.0);
     }
 
     to {
-        background-color: rgb(0, 110, 255);
+        transform: scale(1.0);
     }
+}
+
+
+#bounce {
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    background-color: rgb(98, 114, 255);
+    animation-name: squash;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes squash {
+    0% {
+        transform: scaleY(0.25);
+        top: -24rem;
+    }
+
+    50% {
+        transform: translateY(-32rem) scaleY(1.0);
+
+    }
+
+    100% {
+        transform: scaleY(0.25);
+        top: -24rem;
+    }
+}
+
+#triangle {
+    grid-column: 2;
+    grid-row: 2/4;
 }

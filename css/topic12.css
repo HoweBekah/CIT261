@@ -1,0 +1,44 @@
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+body {
+    width: 75%;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    background-color: lightpink;
+    color: #612A03;
+    margin: auto;
+}
+
+h2 {
+
+    font-size: 2em;
+    color: #6272FF;
+}
+
+
+main {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 80%;
+}
+
+
+#testing {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    transition: width 1s, height 2s, background-color 2s, transform 1s;
+}
+
+#testing:hover {
+    width: 300px;
+    height: 400px;
+    background-color: red;
+    transform: rotate(90deg);
+}
