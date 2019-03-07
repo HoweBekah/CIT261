@@ -1,0 +1,49 @@
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+body {
+    width: 75%;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    background-color: lightpink;
+    color: #612A03;
+    margin: auto;
+}
+
+h2 {
+
+    font-size: 2em;
+    color: #6272FF;
+}
+
+
+main {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 80%;
+}
+
+#testing {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 110, 255);
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    from {
+        background-color: rgb(160, 138, 98);
+    }
+
+    to {
+        background-color: rgb(0, 110, 255);
+    }
+}
