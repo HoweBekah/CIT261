@@ -1,0 +1,31 @@
+body {
+    width: 75%;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    background-color: lightpink;
+    color: #612A03;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+
+    font-size: 4em;
+    color: #6272FF;
+}
+
+
+main {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 80%;
+}
+
+#content {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}
