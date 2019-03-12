@@ -15,12 +15,27 @@
 
 <body>
     <div id="content">
-        <h1>AFI Top 15 movies of all time as of</h1>
-        <h2 id="currentdate"></h2>
-        <section id="movielist"></section>
+        <h2>Newest Binge</h2>
+        <h4>Do you ever struggle to pick a new show to binge watch? This handy app will choose one for you of the
+            options you provide!
+        </h4>
+        <form>
+            <h3>My show options:</h3><br>
+            <input id="addshow" type="text" placeholder="Add one show at a time">
+            <button type="button" onclick="showList()">Add Show</button> <button type="button" onclick="removeShow()">Remove
+                Show</button>
+        </form><br>
+        <ol id="showoptions">
+        </ol><br><br>
+
+        <button id="pickbutton" type="button" onclick="pickShow()">Pick my Show</button><br>
+        <div id="watchDiv"></div><br> <br>
+
+        <p>Refreshed your browser by accident? Click here to retrieve all of your show options!</p>
+        <button type="button" onclick="returnList()">My Options</button><br><br>
+        <div id="listDiv"></div>
     </div>
-    <script src="js/topicfive.js"></script>
-    <script src="js/currentdate.js"></script>
+    <script src="js/topic5real.js"></script>
 </body>
 
 </html>

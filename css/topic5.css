@@ -48,22 +48,44 @@ h4 {
 main {
 
     background-color: lightpink;
-    color: rgb(97, 42, 3);
+    color: #612A03;
 
 }
 
-#movielist {
-    align-items: center;
+#showoptions {
+    font-size: 2rem;
+    list-style-position: inside;
+    background-color: #612A03;
+    color: whitesmoke;
+    display: inline-block;
+    padding-left: 0;
 }
 
-section article {
-    text-align: left;
-    width: 33%;
-    float: left;
-
-
+#showoptions li {
+    padding: .5rem;
 }
 
-section article p {
-    font-size: 1.25rem;
+#pickbutton {
+    color: whitesmoke;
+    font-size: 2rem;
+    background-color: #6272FF;
+    box-shadow: .25rem .25rem .25rem #612A03;
+}
+
+#watchDiv {
+    margin-top: 2rem;
+    font-size: 4rem;
+    background-color: #B40C0C;
+    color: whitesmoke;
+    line-height: 4.5rem;
+    box-shadow: .5rem .5rem .75rem #612A03;
+    display: inline-block;
+}
+
+#listDiv {
+    color: #612A03;
+    background-color: #6272FF;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
