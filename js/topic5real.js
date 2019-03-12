@@ -11,9 +11,10 @@
    }
 
    function removeShow() {
-       var list = document.getElementById("showoptions");
-       list.removeChild(list.childNodes[list.length - 1]);
-
+       var showslist = document.getElementById("showoptions");
+       var showItems = showslist.getElementsByTagName("li");
+       var last = showItems[showItems.length - 1];
+       showslist.removeChild(last);
    }
 
    function pickShow() {

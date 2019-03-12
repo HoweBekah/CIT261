@@ -29,21 +29,22 @@ h2 {
 
     display: inline-block;
     font-size: 4em;
-    border-bottom: .25rem dashed rgb(98, 114, 255);
-    padding: .5rem;
-    margin-bottom: 2.5rem;
-
+    border: .25rem dashed rgb(98, 114, 255);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: whitesmoke;
 }
 
 h4 {
-
     font-size: 2em;
-    text-align: left;
-    padding: .5rem;
-    padding-bottom: .5rem;
 
+    padding-bottom: 1rem;
 }
 
+h3 {
+    padding-bottom: 1rem;
+}
 
 main {
 
@@ -67,9 +68,10 @@ main {
 
 #pickbutton {
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: #6272FF;
-    box-shadow: .25rem .25rem .25rem #612A03;
+    box-shadow: .5rem .5rem .75rem #B40C0C;
+    padding: .5rem;
 }
 
 #watchDiv {
@@ -88,4 +90,25 @@ main {
     display: inline-block;
     font-size: 2rem;
     line-height: 2.5rem;
+}
+
+form {
+    font-size: 2rem;
+}
+
+form button {
+    background-color: #612A03;
+    color: whitesmoke;
+    box-shadow: .25rem .25rem .25rem #B40C0C;
+}
+
+#options {
+    font-size: 1.5rem;
+    color: #B40C0C;
+    box-shadow: .25rem .25rem .25rem #B40C0C;
+    padding: .5rem;
+}
+
+#refresh {
+    font-size: 1.25rem;
 }

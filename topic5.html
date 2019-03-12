@@ -20,7 +20,7 @@
             options you provide!
         </h4>
         <form>
-            <h3>My show options:</h3><br>
+            <h3>Binge options:</h3>
             <input id="addshow" type="text" placeholder="Add one show at a time">
             <button type="button" onclick="showList()">Add Show</button> <button type="button" onclick="removeShow()">Remove
                 Show</button>
@@ -31,8 +31,8 @@
         <button id="pickbutton" type="button" onclick="pickShow()">Pick my Show</button><br>
         <div id="watchDiv"></div><br> <br>
 
-        <p>Refreshed your browser by accident? Click here to retrieve all of your show options!</p>
-        <button type="button" onclick="returnList()">My Options</button><br><br>
+        <p id="refresh">Refreshed your browser by accident? Click here to retrieve all of your show options!</p>
+        <button id="options" type="button" onclick="returnList()">My Options</button><br><br>
         <div id="listDiv"></div>
     </div>
     <script src="js/topic5real.js"></script>
