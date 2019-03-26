@@ -8,6 +8,9 @@ h3 {
 
 body {
     background-color: #1A7E79;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
 }
 
 h4 {
@@ -16,4 +19,95 @@ h4 {
 
 h5 {
     color: #612A03;
+}
+
+header {
+    background-color: #FD8274;
+    color: whitesmoke;
+    width: 75%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-shadow: .25rem .25rem .5rem #1A7E79;
+}
+
+#menubutton {
+    display: none
+}
+
+
+#nav {
+    margin-bottom: 0;
+    text-align: center;
+    margin: auto
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+    border-right: .2rem solid #1A7E79;
+    border-left: .2rem solid #1A7E79;
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    margin: 0 auto
+}
+
+nav li {
+    float: left;
+    background-color: whitesmoke;
+}
+
+nav a {
+    color: #612A03;
+    font-size: 1.5em;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    padding: .5rem;
+    text-align: center
+}
+
+nav a:hover {
+    background-color: #612A03;
+    color: whitesmoke;
+    padding: .5rem;
+}
+
+#navul a.current:hover {
+    color: #1A7E79;
+}
+
+#navul a.current {
+    background: #F8E057;
+    padding: .5rem;
+}
+
+#navul {
+    margin: auto;
+
+}
+
+#navul li {
+    border-right: .2rem solid #1A7E79;
+}
+
+#navul li:last-child {
+    border-right: none
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none
 }
