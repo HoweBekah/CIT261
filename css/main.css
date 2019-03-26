@@ -26,6 +26,13 @@ h2 {
     border-bottom: 2px solid rgb(98, 114, 255);
 }
 
+#webapp {
+
+    font-size: 2em;
+    text-align: left;
+    padding: 1rem;
+}
+
 li a:hover {
     background-color: antiquewhite;
 }
