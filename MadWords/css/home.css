@@ -9,7 +9,7 @@ h3 {
 body {
     background-color: #1A7E79;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Arvo', serif;
     color: whitesmoke;
     justify-content: center;
 }
@@ -201,8 +201,8 @@ ul {
 #date {
     font-size: 5rem;
     color: whitesmoke;
-    font-family: 'Permanent Marker',
-        cursive;
+    font-family: 'Arvo',
+        serif;
     font-weight: 400;
 }
 
@@ -210,8 +210,8 @@ ul {
 
     font-size: 2.5rem;
     color: #1A7E79;
-    font-family: 'Permanent Marker',
-        cursive;
+    font-family: 'Arvo',
+        serif;
     font-weight: 300;
 }
 
@@ -219,8 +219,8 @@ ul {
 
     font-size: 1.5rem;
     color: #612A03;
-    font-family: 'Permanent Marker',
-        cursive;
+    font-family: 'Arvo',
+        serif;
     font-weight: 200;
 }
 
@@ -270,7 +270,8 @@ ul {
 .month th {
     width: 14%;
     font-size: 2rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Arvo',
+        serif;
     font-weight: 100;
 }
 
