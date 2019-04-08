@@ -1,10 +1,16 @@
 h2 {
     color: #FD8274;
-
+    margin-top: 0;
 }
 
 #madtitle {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 1rem;
+    background-color: whitesmoke;
+    border: .5rem solid #612A03;
+    border-radius: .5rem;
+    display: inline-block;
+    padding: .5rem;
 }
 
 h3 {
@@ -134,10 +140,20 @@ button {
     margin: 1rem;
 }
 
-.hidden {
+/*.hidden {
     display: none;
 }
 
 .seeit {
     display: block;
+}
+*/
+main {
+    width: 75%;
+    margin: auto;
+}
+
+#lib {
+    margin-top: 1rem;
+    font-size: 2rem;
 }
