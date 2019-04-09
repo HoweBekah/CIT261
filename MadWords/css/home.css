@@ -126,7 +126,7 @@ ul {
 
 
 .container {
-    width: 50rem;
+    width: 75%;
     height: 25rem;
     position: relative;
     margin: auto;
@@ -173,6 +173,7 @@ ul {
 }
 
 .back {
+    text-transform: uppercase;
     transform: rotateY(180deg);
     background-color: #612A03;
     -webkit-backface-visibility: hidden;
@@ -192,7 +193,7 @@ ul {
 
 .date {
     height: 100%;
-    width: 16.25rem;
+    width: 44.2%;
     float: left;
     background-color: #FD8274;
     border-radius: 0 6px 6px 0;
@@ -209,7 +210,7 @@ ul {
 }
 
 #date {
-    font-size: 5rem;
+    font-size: 4rem;
     color: whitesmoke;
     font-family: 'Arvo',
         serif;
@@ -241,10 +242,10 @@ ul {
     right: 0;
 }
 
-.date i:hover {
+/*.date i:hover {
     color: #612A03;
     transition: .3s ease;
-}
+}*/
 
 .month {
     height: 100%;
@@ -271,10 +272,10 @@ ul {
 
 }
 
-.whiteTr th:hover {
+/*.whiteTr th:hover {
     color: #FD8274;
     transition: .3s ease;
-}
+}*/
 
 
 .month th {
@@ -301,7 +302,64 @@ ul {
     float: left;
     margin-left: 30px;
     margin-top: 20px;
-    border-left: solid red 5px;
-    background-color: red;
+
     transform: translatez(-60px) scale();
+}
+
+#todayword {
+    font-size: 2rem;
+    color: #F8E057;
+    background-color: #1A7E79;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-top: .5rem;
+}
+
+#todaydef {
+    background-color: #FD8274;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    font-family: 'Arvo', serif;
+    padding: .5rem;
+}
+
+#word {
+    margin: 0;
+}
+
+ol li {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+    ;
+}
+
+#wordtitle {
+    font-size: 2rem;
+    margin-top: .5rem;
+    line-height: 1rem;
+}
+
+#worddefs {
+    font-size: 1.5rem;
+}
+
+#worddefs p {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+h4 {
+    margin: .5rem;
+    font-size: 1.5rem;
+    color: #FD8274;
+}
+
+#titleBack {
+    background-color: #1A7E79;
+    border-radius: .75rem;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
 }

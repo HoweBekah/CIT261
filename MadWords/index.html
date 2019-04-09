@@ -46,7 +46,7 @@
 
         <div class="container">
             <div class="card">
-                <div class="front">
+                <div class="front" onclick="backDef()">
                     <div class="contentfront">
                         <div class="month">
                             <table>
@@ -106,30 +106,33 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="date">
+                        <div id="pinkbox" class="date">
                             <div class="datecont">
                                 <div id="month"></div>
                                 <div id="day"></div>
                                 <div id="date"></div>
                                 <div id="todayword"></div>
+                                <div id="todaydef"></div>
 
                                 <i class="fa fa-pencil edit" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="backword" class="back">
-                    <!---<div class="contentback">
-              <div class="backcontainer">
-                hhh
-              </div>
-            </div>--->
+                <div class="back">
+                    <div class="contentback" onclick="backClear()">
+                        <div id="backwords" class="backcontainer">
+                            <div id="wordtitle"></div>
+                            <div id="worddefs"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </main>
     <footer></footer>
+    <script src="js/wordofday.js"></script>
     <script src="js/calendar.js"></script>
 </body>
 

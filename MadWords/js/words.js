@@ -13,7 +13,7 @@ var ran;
 request.onload = function () {
     madText = request.responseText;
     libwords = JSON.parse(madText);
-    ran = Math.floor(Math.random() * Math.floor(5));
+    ran = Math.floor(Math.random() * Math.floor(4));
     libwords = libwords["templates"];
     libwords = libwords[ran];
 
