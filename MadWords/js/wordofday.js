@@ -63,7 +63,8 @@ request.onload = function () {
 
     //console.log(wordInfo);
     h3.id = "word";
-    h3.textContent = wordInfo[0].meta.id;
+    var booger = wordInfo[0].meta.id.split(":");
+    h3.textContent = booger[0];
 
     for (var i = 0; i < wordInfo[0].shortdef.length; i++) {
         var item = document.createElement("li");
@@ -82,7 +83,9 @@ function backDef() {
     var h4 = document.createElement("h4");
     bwordText = brequest.responseText;
     bwordInfo = JSON.parse(bwordText);
-    bh3.textContent = bwordInfo[0].meta.id;
+
+    var booger = bwordInfo[0].meta.id.split(":");
+    bh3.textContent = booger[0];
     bh3.id = "titleBack";
     backtitle.appendChild(bh3);
     console.log(bwordInfo);

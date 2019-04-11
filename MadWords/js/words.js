@@ -20,8 +20,7 @@ request.onload = function () {
     var h2 = document.createElement("h2");
     h2.textContent = libwords.title;
     fillin.appendChild(h2);
-    //can't change this to blanks so that there isn't an extra undefined input or else the popLib() doesn't work
-    for (var i = 0; i < libwords.story.length - 1; i++) {
+    for (var i = 0; i < libwords.blanks.length; i++) {
         var input = document.createElement("input");
         var label = document.createElement("label");
         var brake = document.createElement("br");
@@ -31,18 +30,23 @@ request.onload = function () {
         input.id = "word" + i;
         label.textContent = wordtype + ": ";
         label.setAttribute("for", input);
-        fillin.insertBefore(label, document.getElementById("input"));
         fillin.appendChild(input);
+        fillin.insertBefore(label, document.getElementById("word" + i));
         fillin.appendChild(brake);
     }
 
 };
 
 function popLib() {
+    libbed.innerHTML = "";
     var para = document.createElement("p");
     para.textContent += "\"";
-    for (var i = 0; i < libwords.story.length - 1; i++) {
-        para.textContent += libwords.story[i] + document.getElementById("word" + i).value;
+    for (var i = 0; i < libwords.story.length; i++) {
+
+        para.textContent += libwords.story[i];
+        if (document.getElementById("word" + i)) {
+            para.textContent += document.getElementById("word" + i).value;
+        }
     }
     para.id = "lib";
     console.log(para);
